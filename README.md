@@ -81,10 +81,7 @@ print(me.get_status())
   <a href="https://github.com/LuiizNogueira">
     <img src="https://img.shields.io/badge/GitHub-LuiizNogueira-0A0F1E?style=for-the-badge&logo=github&logoColor=00F2FE" alt="GitHub" />
   </a>
-  <a href="https://www.linkedin.com/in/SEU-USUARIO">
-    <img src="https://img.shields.io/badge/LinkedIn-Conectar-0A0F1E?style=for-the-badge&logo=linkedin&logoColor=4FACFE" alt="LinkedIn" />
-  </a>
-  <a href="mailto:SEU-EMAIL@exemplo.com">
+  <a href="mailto:luiznogueira0062@gmail..com">
     <img src="https://img.shields.io/badge/Email-Enviar-0A0F1E?style=for-the-badge&logo=gmail&logoColor=00F2FE" alt="Email" />
   </a>
 </div>
@@ -92,7 +89,7 @@ print(me.get_status())
 <br />
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=4000&pause=2000&color=4FACFE&center=true&vCenter=true&width=500&height=30&lines=feito+com+cafe+e+muito+codigo" alt="Footer" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=4000&pause=2000&color=4FACFE&center=true&vCenter=true&width=500&height=30&lines=Intelligence+in+the+cat+is+underrated" alt="Footer" />
 </div>
 
 <!--PYTHON_STATUS_START-->
