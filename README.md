@@ -94,3 +94,17 @@ print(me.get_status())
 <div align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=4000&pause=2000&color=4FACFE&center=true&vCenter=true&width=500&height=30&lines=feito+com+cafe+e+muito+codigo" alt="Footer" />
 </div>
+
+<!--PYTHON_STATUS_START-->
+
+> **⚡ Status do Sistema (Executado via Python no servidor):**
+```json
+{
+    "status": "Online & Coding 🚀",
+    "coffee_level": "100%",
+    "current_focus": "Performance mobile & integrações de backend",
+    "last_updated": "19/10/2026 às 03:47"
+}
+```
+
+<!--PYTHON_STATUS_END-->
