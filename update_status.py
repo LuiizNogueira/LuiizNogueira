@@ -12,7 +12,6 @@ class LuizNogueira:
         self.philosophy = "Clean Code & apps mobile escaláveis"
 
     def get_status(self):
-        # Pega a data e hora atual do servidor
         now = datetime.now().strftime("%d/%m/%Y às %H:%M")
         return {
             "status": "Online & Coding 🚀",
@@ -25,10 +24,10 @@ def update_readme():
     me = LuizNogueira()
     status = me.get_status()
     
-    # Formata em bloco JSON para o Markdown
-    output_markdown = f"""```json
+    output_markdown = f"""\n> **⚡ Status do Sistema (Executado via Python no servidor):**
+```json
 {json.dumps(status, indent=4, ensure_ascii=False)}
-```"""
+```\n"""
 
     with open("README.md", "r", encoding="utf-8") as f:
         content = f.read()
@@ -36,14 +35,19 @@ def update_readme():
     start_tag = "<!--PYTHON_STATUS_START-->"
     end_tag = "<!--PYTHON_STATUS_END-->"
     
-    start_pos = content.find(start_tag) + len(start_tag)
+    start_pos = content.find(start_tag)
     end_pos = content.find(end_tag)
 
     if start_pos != -1 and end_pos != -1:
-        new_content = content[:start_pos] + "\n" + output_markdown + "\n" + content[end_pos:]
-        with open("README.md", "w", encoding="utf-8") as f:
-            f.write(new_content)
-        print("README atualizado com sucesso via Python!")
+        # Se as tags já existem, substitui o miolo
+        new_content = content[:start_pos + len(start_tag)] + "\n" + output_markdown + "\n" + content[end_pos:]
+    else:
+        # Se não existem, ele joga as tags e o conteúdo no final do README
+        new_content = content + f"\n{start_tag}\n{output_markdown}\n{end_tag}\n"
+
+    with open("README.md", "w", encoding="utf-8") as f:
+        f.write(new_content)
+    print("README atualizado com sucesso!")
 
 if __name__ == "__main__":
     update_readme()
