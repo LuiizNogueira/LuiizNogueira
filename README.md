@@ -23,7 +23,6 @@
 <br />
 
 ---
-
 ## 👨‍💻 Sobre mim
 
 ```python
