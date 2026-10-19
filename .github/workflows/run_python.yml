@@ -1,0 +1,29 @@
+name: Executar Python no README
+
+on:
+  schedule:
+    - cron: "0 */6 * * *" # Executa automaticamente a cada 6 horas
+  workflow_dispatch: # Permite rodar manualmente num botão
+
+jobs:
+  run-python:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar codigo do repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar ambiente Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Rodar o script Python
+        run: python update_status.py
+
+      - name: Salvar alteracoes no README
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "bot: executou classe Python e atualizou o status 🐍" || exit 0
+          git push
