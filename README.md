@@ -9,7 +9,7 @@
 </a>
 
 <a href="https://github.com/LuiizNogueira">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=4FACFE&center=true&vCenter=true&width=600&height=40&lines=Fullstack+and+Mobile+Developer;Python+-+TypeScript+-+React+Native;MySQL+Database+Architect;Uma+linha+de+codigo+por+vez" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=4FACFE&center=true&vCenter=true&width=600&height=40&lines=Fullstack+and+Mobile+Developer;Python+-+TypeScript+-+React+Native;MySQL+Database+Architect;No+Pain+No+Gain" alt="Typing SVG" />
 </a>
 
 <br />
